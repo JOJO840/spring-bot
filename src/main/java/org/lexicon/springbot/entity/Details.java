@@ -19,7 +19,7 @@ public class Details {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(updatable = false)
     private int id;
-    @Column(unique = true, length = 100)
+    @Column(unique = true, length = 100)  //Sets uniqueness and character limits for the DB
     private String email;
     @Column(length = 70)
     private String name;
