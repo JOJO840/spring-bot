@@ -26,5 +26,5 @@ public class AppUser {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "details_id")
-    private Details userDetails;
+    private Details details;
 }

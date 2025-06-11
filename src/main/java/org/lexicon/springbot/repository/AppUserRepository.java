@@ -11,8 +11,8 @@ import java.util.Optional;
 @Repository
 public interface AppUserRepository extends CrudRepository<AppUser, Integer> {
     Optional<AppUser> findByUsername(String username);
-    List<AppUser> findByRegistrationDateBetween(LocalDate start, LocalDate end);
-    Optional<AppUser> findByDetails_Id(Integer detailsId);
-    Optional<AppUser> findByDetails_EmailIgnoreCase(String email);
+    List<AppUser> findByRegDateBetween(LocalDate start, LocalDate end);
+    Optional<AppUser> findByDetailsId(Integer detailsId);
+    Optional<AppUser> findByDetailsEmailIgnoreCase(String email);
 
 }
